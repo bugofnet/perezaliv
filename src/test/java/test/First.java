@@ -8,21 +8,10 @@ public class First extends TestBase {
     @Test
     public void firstTest() {
 
-        main.goTo();
-//                .chooseTask("1");
-//        taskOne.checkPageIsCorrect();
-        taskOne.scrollToElement("Kostka");
-
+        main.goTo()
+                .chooseTask("1");
+        taskOne.checkPageIsCorrect();
     }
 
-    @Test
-    public void firstTests() {
-
-        main.goTo();
-//                .chooseTask("1");
-//        taskOne.checkPageIsCorrect();
-        taskOne.scrollToElement("Kostka");
-
-    }
 
 }

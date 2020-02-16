@@ -3,14 +3,12 @@ package page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import static java.lang.Thread.sleep;
-
 public class TaskSix extends BasePage {
     public TaskSix(WebDriver driver) {
         super(driver);
     }
 
-    public TaskSix fillInLogin(String login) throws InterruptedException {
+    public TaskSix fillInLogin(String login){
         writeText(By.id("LoginForm__username"), login);
         return this;
     }
