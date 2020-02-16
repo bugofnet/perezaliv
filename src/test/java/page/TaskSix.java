@@ -19,7 +19,7 @@ public class TaskSix extends BasePage {
     }
 
     public TaskSix loginButtonClick(){
-        click(By.cssSelector(".btn-default.btn"));
+        click(By.xpath("//button[text()='Login']"));
         return this;
     }
 
@@ -32,6 +32,11 @@ public class TaskSix extends BasePage {
         isElementDisplayed(By.id("LoginForm__username"));
         isElementDisplayed(By.name("LoginForm[_password]"));
         isElementDisplayed(By.cssSelector(".btn-default.btn"));
+        return this;
+    }
+
+    public TaskSix isLoginWrong(){
+        isElementNotDisplayed(By.linkText("Pobierz plik"));
         return this;
     }
 }
