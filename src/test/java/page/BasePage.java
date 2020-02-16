@@ -49,7 +49,9 @@ public class BasePage {
     }
 
     public void isElementNotDisplayed(By elementBy) {
-        assertFalse(driver.findElements(elementBy).size() > 0);
+//        assertFalse(driver.findElements(elementBy).size() > 0);
+//        так смотрится луше ;)
+        assertTrue(driver.findElements(elementBy).isEmpty());
     }
 
 
