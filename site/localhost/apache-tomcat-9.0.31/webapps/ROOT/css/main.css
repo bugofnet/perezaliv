@@ -1,0 +1,271 @@
+.logo ul {
+    margin: 2px;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.logged{
+    text-align: right;
+}
+
+.button_wrapper {
+    text-align: right;
+}
+
+.logo ul li {
+    display: inline-block;
+}
+
+.navbar-fixed-bottom,
+.navbar-fixed-top {
+    position: static;
+}
+
+.navbar-header {
+    width: 100%;
+}
+
+.navbar-header h2 {
+    color: #fff;
+    margin: 28px 0;
+}
+
+.navbar-nav li button {
+    margin-top: 9px;
+    margin-left: 9px;
+}
+
+.pgs-logo-task {
+    width: 200px;
+}
+
+.taskDescription {
+    border-radius: 3px;
+    padding: 30px;
+    height: 100%;
+}
+
+.text-on-button-level {
+    line-height: 30px;
+}
+
+.modal-task-hint {
+    position: absolute;
+    top: 2%;
+    left: 400px;
+}
+
+.custom-modal {
+    position: fixed;
+    width: 400px;
+    margin-top: 0;
+    left: -400px;
+    height: auto;
+    z-index: 10000000;
+    background-color: white;
+}
+
+.custom-modal-body {
+    width: 400px;
+    height: auto;
+    display: inline-block;
+    overflow: auto;
+    text-align: justify;
+}
+
+.custom-modal.active {
+    left: 0;
+}
+
+.modal-task-hint.active {
+    left: 100%;
+}
+
+.main-logo {
+    margin: 10px 0px;
+}
+
+.pgs-logo:before {
+    content: "powered by";
+    white-space: nowrap;
+    position: absolute;
+    padding: 0;
+    right: 90%;
+    top: 15px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.task-list {
+    margin-top: 30px;
+}
+
+.task-list a {
+    text-align: center;
+    padding: 5px 10px 10px;
+    float: left;
+    width: 100%;
+    border: 1px dashed;
+    margin-top: 8px;
+}
+
+.task-list a:hover {
+    background: rgba(51, 122, 183, 0.15);
+    text-decoration: none;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.max-width-100 {
+    max-width: 100%;
+}
+
+.navbar-inverse .navbar-nav>li>a.disabled:focus,
+.navbar-inverse .navbar-nav>li>.disableda:hover {}
+
+.navbar-inverse .navbar-nav>li>a.disabled {
+    color: #585858;
+}
+
+.navbar.bg-color,
+.bg-color {
+    background-color: #222d54;
+    color: white;
+    text-align: center;
+}
+
+.navbar.navbar-inverse {
+    background-color: black;
+}
+
+.navbar-inverse .container {
+    color: white;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #ffffff;
+}
+
+.navbar .tasks li {
+    display: block;
+    color: white;
+}
+
+.navbar-nav.navbar-task > li {
+    padding: 10px 15px;
+    line-height: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.navbar-nav.navbar-task > li > a {
+    padding: 0;
+    line-height: 40px;
+}
+
+.navbar-collapse a.home {
+    color: white;
+    line-height: 60px;
+    float: right;
+    font-size: 22px;
+}
+
+.navbar-nav.navbar-task > li > a:hover {
+    background-color: transparent;
+}
+
+.navbar .helpers {
+    line-height: 50px;
+}
+
+textarea {
+    resize: none;
+}
+
+.caret-right {
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+    border-left: 4px solid;
+    display: inline-block;
+    height: 0;
+    opacity: 0.3;
+    vertical-align: middle;
+    width: 0;
+    margin-left: 50px;
+}
+
+.taskDescription .row {
+    padding: 10px 0;
+}
+
+.taskDescription h4 {
+    margin-top: 1em;
+    width: calc( 100% - 30px);
+    float: left;
+}
+
+.taskDescription .close {
+    width: 30px;
+    float: right;
+}
+
+.form-hidden {
+    display: none;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 15px;
+    color: #FF7726;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+footer a {
+    color: #FF7726;
+}
+
+.open-details,
+#main-reset {
+    cursor: pointer;
+}
+
+body > .container {
+    padding-bottom: 55px;
+}
+
+.container .task {
+    margin-top: 25px;
+}
+
+.navbar-task li {
+    width: 60px;
+}
+
+.navbar-task li:nth-child(2) {
+    width: 200px;
+    text-align: center;
+}

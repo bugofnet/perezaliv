@@ -1,0 +1,84 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>BugofNET QA Academy</title>
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link href="/css/main.css" rel="stylesheet"/>
+    <link href="/css/task_6/main.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="navbar navbar-fixed-top">
+    <div class="container logos">
+        <div class="col-sm-10 col-md-10">
+            <a href="https://www.youtube.com/channel/UCVE8_r0VkxUYjGd094sKc4g?view_as=subscriber" target="_blank">Дневник
+                тестировщика</a>
+        </div>
+        <div class="col-sm-1 col-md-1 col-md-offset-1">
+            <div class="pgs-logo"><img src="/images/bn.PNG" class="main-logo" alt="BUGOFNET QA ACADEMY" height="48"/>
+            </div>
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-fixed-top bg-color">
+    <div class="container helpers">
+        <div class="navbar-header">
+
+            <div class="col-md-12">
+                HERE YOU CAN PERFORM SIMPLE SELENIUM TESTS
+            </div>
+
+
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+
+</nav>
+<div class="container">
+    <div class="col-md-12">
+        <div class="task">
+
+
+            <div class="col-md-offset-4 col-md-4">
+                <form name="LoginForm">
+                    <div id="LoginForm">
+                        <div class="form-group"><label class="control-label required"
+                                                       for="username">Login</label><input type="text"
+                                                                                          id="username"
+                                                                                          name="username"
+                                                                                          required="required"
+                                                                                          value=""
+                                                                                          class="form-control"/>
+                        </div>
+                        <div class="form-group"><label class="control-label required"
+                                                       for="password">Password</label><input type="password"
+                                                                                             id="password"
+                                                                                             name="password"
+                                                                                             required="required"
+                                                                                             class="form-control"/>
+                        </div>
+
+
+                        <div class="form-group">
+                            <button type="button" id="save" name="save" class="btn-default btn"
+                                    onclick="checkForm(this.form)">Login</button>
+                        </div>
+
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script language="JavaScript">
+    function checkForm(form) {
+        if (form.username.value == "bugofnet" && form.password.value == "1234Abcd@") {
+            window.open("logged.html", "_self")
+        } else {
+            alert("Wrong credentials!")
+        }
+    }
+</script>
+</body>
+</html>
