@@ -2,10 +2,14 @@ package steps;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import io.qameta.allure.Attachment;
+import io.qameta.allure.Step;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
 public class StepsDefinition extends TestBase {
     @Before
@@ -14,35 +18,40 @@ public class StepsDefinition extends TestBase {
     }
 
     @After
-    public void teardown(){
+    public void teardown(Scenario scenario){
+        if (scenario.isFailed()) {
+            attachScreenshot();
+        }
         finish();
     }
 
+    @Attachment(value = "Failed test screenshot")
+    public byte[] attachScreenshot() {
+        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+    }
 
+    @Step("I go to main page")
     @Given("I go to main page")
     public void iGoToMainPage() {
         main.goTo();
     }
 
-    @When("I select {string} task")
-    public void iSelectTask(String taskNumber) {
-        main.chooseTask(taskNumber);
-    }
-
+    @Step("I login as {0} with password {1}")
     @And("I login as {string} with password {string}")
     public void iLoginAsWithPassword(String login, String password) {
-        taskSix.checkAllElementsOnPagePresent()
+        user.checkAllElementsOnPagePresent()
                 .fillInLogin(login)
                 .fillInPassword(password)
                 .loginButtonClick();
     }
 
-    @Then("I should (see|not see) the link to download file$")
+    @Step("Then I {0} link")
+    @Then("I have (been|not been) successfully logged$")
     public void iShouldSeeTheLinkToDownloadFile(String visibility) {
-        if(visibility.equals("see")){
-            taskSix.isLoginCorrect();
+        if(visibility.equals("been")){
+            user.isLoginCorrect();
         } else {
-            taskSix.isLoginWrong();
+            user.isLoginWrong();
         }
     }
 

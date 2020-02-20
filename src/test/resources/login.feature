@@ -2,17 +2,15 @@ Feature: I want to test task six
 
   Scenario: I want to login with correct credentials
     Given I go to main page
-    When I select "6" task
-    And I login as "tester" with password "123-xyz"
-    Then I should see the link to download file
+    When I login as "bugofnet" with password "1234Abcd@"
+    Then I have been successfully logged
 
   Scenario Outline: I want to login with wrong credentials
     Given I go to main page
-    When I select "6" task
     And I login as "<login>" with password "<password>"
-    Then I should not see the link to download file
+    Then I have not been successfully logged
 
     Examples:
       | login    | password |
-      | bugofnet |          |
-      |          | 123456   |
+      | tester   | 123      |
+      | bugofnet | 123-xyz  |
