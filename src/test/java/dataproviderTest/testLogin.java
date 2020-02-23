@@ -21,7 +21,6 @@ public class testLogin {
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        driver.get(SITE_URL);
     }
     @AfterMethod
     public void finish(){
