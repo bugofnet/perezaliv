@@ -1,16 +1,15 @@
 package page;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class Main extends BasePage {
+public class MainPage extends BasePage {
     String SITE_URL = "http://127.0.0.1:8080/main.html";
 
-    public Main(WebDriver driver) {
+    public MainPage(WebDriver driver) {
         super(driver);
     }
 
-    public Main goTo() {
+    public MainPage goTo() {
         driver.get(SITE_URL);
         return this;
     }

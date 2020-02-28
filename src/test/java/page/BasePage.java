@@ -4,6 +4,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -17,6 +18,7 @@ public class BasePage {
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
+        PageFactory.initElements(driver, this);
         wait = new WebDriverWait(driver, 15);
     }
 
@@ -24,11 +26,19 @@ public class BasePage {
     public void waitVisibility(By elementBy) {
         wait.until(ExpectedConditions.visibilityOfElementLocated(elementBy));
     }
+    public void waitVisibility(WebElement element) {
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
 
     //Click Method by element located By
     public void click(By elementBy) {
         waitVisibility(elementBy);
         driver.findElement(elementBy).click();
+    }
+    //Click Method by WebElement
+    public void click(WebElement element) {
+        waitVisibility(element);
+        element.click();
     }
 
     //Is Element located By  Displayed

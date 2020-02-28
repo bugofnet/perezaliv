@@ -1,29 +1,15 @@
 package steps;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
-import io.cucumber.java.Scenario;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
+
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
-public class StepsDefinition extends TestBase {
-    @Before
-    public void initialisation(){
-        start();
-    }
-
-    @After
-    public void teardown(Scenario scenario){
-        if (scenario.isFailed()) {
-            attachScreenshot();
-        }
-        finish();
-    }
+public class LoginStepsDefinition extends TestBase {
 
     @Attachment(value = "Failed test screenshot")
     public byte[] attachScreenshot() {
@@ -33,13 +19,13 @@ public class StepsDefinition extends TestBase {
     @Step("I go to main page")
     @Given("I go to main page")
     public void iGoToMainPage() {
-        main.goTo();
+        mainPage.goTo();
     }
 
     @Step("I login as {0} with password {1}")
-    @And("I login as {string} with password {string}")
+    @And("I login as \"([^\"]*)\" with password \"([^\"]*)\"$")
     public void iLoginAsWithPassword(String login, String password) {
-        user.checkAllElementsOnPagePresent()
+        loginPage.checkAllElementsOnPagePresent()
                 .fillInLogin(login)
                 .fillInPassword(password)
                 .loginButtonClick();
@@ -49,10 +35,21 @@ public class StepsDefinition extends TestBase {
     @Then("I have (been|not been) successfully logged$")
     public void iShouldSeeTheLinkToDownloadFile(String visibility) {
         if(visibility.equals("been")){
-            user.isLoginCorrect();
+            loginPage.isLoginCorrect();
         } else {
-            user.isLoginWrong();
+            loginPage.isLoginWrong();
         }
     }
+
+    @Step("I login with correct credentials")
+    @And("I login with correct credentials")
+    public void iLoginWithCorrectCredentials() {
+        loginPage.correctLogin();
+    }
+
+//    @When("I want to edit user profile")
+//    public void iWantToEditUserProfile() {
+//        userPage.editButtonClick();
+//    }
 
 }
