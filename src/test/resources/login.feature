@@ -13,4 +13,4 @@ Feature: I want to test task six
     Examples:
       | login    | password |
       | tester   | 123      |
-      | bugofnet | 123-xyz  |
+      | bugofnet | 123-xy  |

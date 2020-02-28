@@ -516,3 +516,32 @@
 20-Feb-2020 20:44:59.585 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 20-Feb-2020 20:44:59.591 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 20-Feb-2020 20:44:59.593 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+28-Feb-2020 08:49:01.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.31
+28-Feb-2020 08:49:01.910 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 5 2020 19:32:12 UTC
+28-Feb-2020 08:49:01.910 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.31.0
+28-Feb-2020 08:49:01.910 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+28-Feb-2020 08:49:01.910 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.3.0-40-generic
+28-Feb-2020 08:49:01.910 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+28-Feb-2020 08:49:01.910 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/siarhei/.sdkman/candidates/java/jdk1.8.0_231/jre
+28-Feb-2020 08:49:01.910 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_231-b11
+28-Feb-2020 08:49:01.910 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+28-Feb-2020 08:49:01.910 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/siarhei/Projects/bugofnet/kakugodno/site/localhost/apache-tomcat-9.0.31
+28-Feb-2020 08:49:01.910 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/siarhei/Projects/bugofnet/kakugodno/site/localhost/apache-tomcat-9.0.31
+28-Feb-2020 08:49:01.911 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/siarhei/Projects/bugofnet/kakugodno/site/localhost/apache-tomcat-9.0.31/conf/logging.properties
+28-Feb-2020 08:49:01.911 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+28-Feb-2020 08:49:01.911 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+28-Feb-2020 08:49:01.911 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+28-Feb-2020 08:49:01.911 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+28-Feb-2020 08:49:01.912 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+28-Feb-2020 08:49:01.912 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/siarhei/Projects/bugofnet/kakugodno/site/localhost/apache-tomcat-9.0.31
+28-Feb-2020 08:49:01.912 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/siarhei/Projects/bugofnet/kakugodno/site/localhost/apache-tomcat-9.0.31
+28-Feb-2020 08:49:01.912 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/siarhei/Projects/bugofnet/kakugodno/site/localhost/apache-tomcat-9.0.31/temp
+28-Feb-2020 08:49:01.912 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+28-Feb-2020 08:49:02.123 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+28-Feb-2020 08:49:02.143 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [388] milliseconds
+28-Feb-2020 08:49:02.165 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+28-Feb-2020 08:49:02.165 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.31]
+28-Feb-2020 08:49:02.171 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/siarhei/Projects/bugofnet/kakugodno/site/localhost/apache-tomcat-9.0.31/webapps/ROOT]
+28-Feb-2020 08:49:02.381 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/siarhei/Projects/bugofnet/kakugodno/site/localhost/apache-tomcat-9.0.31/webapps/ROOT] has finished in [209] ms
+28-Feb-2020 08:49:02.383 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+28-Feb-2020 08:49:02.388 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [245] milliseconds

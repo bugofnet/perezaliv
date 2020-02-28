@@ -1,6 +1,6 @@
 To start the site:
 
-cd /site/locallhost/apache-tomcat-9.031/bin
+cd /site/localhost/apache-tomcat-9.031/bin
 
 run ./startup.sh
 
